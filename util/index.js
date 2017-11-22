@@ -5,7 +5,7 @@ const path = require('path');
 const _ = require('lodash');
 
 exports.module = {};
-exports.import = function (dir, opts) {
+exports.import = function (mod, dir, opts) {
   opts = (opts) ? opts : {};
   var files = fs.readdirSync(dir);
   _.each(files, (file) => {
@@ -25,9 +25,9 @@ exports.import = function (dir, opts) {
     }
 
     if (isModule) {
-      exports[fileObj.name] = require('./' + fileObj.name);
+      mod[fileObj.name] = require('./' + fileObj.name);
     }
   });
 };
 
-exports.import(__dirname);
+exports.import(exports, __dirname);
