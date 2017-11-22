@@ -25,7 +25,7 @@ exports.import = function (mod, dir, opts) {
     }
 
     if (isModule) {
-      mod[fileObj.name] = require('./' + fileObj.name);
+      mod[fileObj.name] = require(path.join(dir, fileObj.name));
     }
   });
 };
