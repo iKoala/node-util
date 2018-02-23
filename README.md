@@ -12,7 +12,7 @@ Utility module for Node.js porjects
 
 ```javascript
 const ut = require('@ikoala/node-util');
-ut.import(__dirname);
+ut.import(__dirname, exports);
 ut.form.validate(req.body, defaultData);
 ut.shortkey();
 ```
