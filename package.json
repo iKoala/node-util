@@ -16,8 +16,9 @@
   "author": "iKoala <iikoala@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.4",
-    "shortid": "^2.2.8"
+    "backpack-core": "^0.8.3",
+    "lodash": "^4.17.11",
+    "shortid": "^2.2.14"
   },
   "devDependencies": {},
   "repository": {
