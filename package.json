@@ -16,7 +16,6 @@
   "author": "iKoala <iikoala@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "backpack-core": "^0.8.3",
     "lodash": "^4.17.11",
     "shortid": "^2.2.14"
   },
